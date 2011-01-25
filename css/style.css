@@ -1,0 +1,315 @@
+/* 
+
+	Coded late one night (while drinking) as a crazy idea. Much to my surprise, it all worked!
+	So I decided to launch it. However, don't consider this any sort of reference when
+	implementing something similar going forward. I'll need to clean this up before you 
+	do that. ;-)
+	
+*/
+
+@import url(reset.css);
+
+@-webkit-keyframes cloud_one {
+	0% {
+		left: -10%;
+	}
+	20%{
+		left: 30%;
+		top: 10px;
+	}
+	50% {
+		left: 50%;
+		top: -25px;
+	}
+	100% {
+		left: 120%;
+	}
+}
+
+@-webkit-keyframes cloud_two {
+	0% {
+		left: -10%;
+	}
+	20% {
+		left: 10%;
+		top: 30px;
+	}
+	50% {
+		left: 40%;
+		top: 20px;
+	}
+	70% {
+		left: 70%;
+		top: 30px;
+	}
+	100% {
+		left: 120%;
+	}
+}
+
+@-webkit-keyframes cloud_three {
+	0% {
+		left: -10%;
+	}
+	20% {
+		left: 5%;
+		top: 50px;
+	}
+	50% {
+		left: 40%;
+		top: 60px;
+	}
+	70% {
+		left: 50%;
+		top: 30px;
+	}
+	100% {
+		left: 120%;
+	}
+}
+
+@-webkit-keyframes cloud_four {
+	0% {
+		left: -10%;
+		top: 50px;
+	}
+	20% {
+		left: 8%;
+		top: 50px;
+	}
+	50% {
+		left: 35%;
+		top: 60px;
+	}
+	70% {
+		left: 70%;
+		top: 30px;
+	}
+	100% {
+		left: 120%;
+	}
+}
+
+#cloud1 {
+	-webkit-animation: cloud_one 20s infinite;
+	left: 100px;
+}
+
+#cloud2 {
+	-webkit-animation: cloud_two 20s infinite;
+}
+
+#cloud3 {
+	-webkit-animation: cloud_three 25s infinite;
+}
+
+#cloud4 {
+	-webkit-animation: cloud_four 17s infinite;
+}
+
+section.cloud {
+	position: absolute;
+	height: 200px;
+	width: 300px;
+}
+
+section.cloud section.elem {
+	height: 50px;
+	width: 50px;
+	background: #FFF;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	position: absolute;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DEDEDe), to(#FFF));
+	background: -moz-linear-gradient(0% 100% 90deg, #DEDEDe, #FFF);
+}
+
+section.cloud section.one {
+	top: 30px;
+	left: 10px;
+}
+
+section.cloud section.two {
+	left: 25px;
+	top: 10px;
+}
+
+section.cloud section.three {
+	left: -30px;
+}
+
+section.cloud section.five {
+	left: -30px;
+	top: 20px;
+}
+
+section#cloud1 {
+	top: 20px;
+}
+
+section#cloud2 {
+	top: 50px;
+}
+
+section#cloud3 {
+	top: 30px;
+}
+
+section#cloud4 {
+	top: 70px;
+}
+
+.clear {
+	clear: both;
+}
+
+a {
+	color: inherit;
+}
+
+body {
+	background: #AED2EC;
+	color: #000;
+	font-family: "Helvetica", sans-serif;
+	font-weight: 100;
+	font-size: 13px;
+	overflow-x: hidden;
+}
+
+section#container {
+	position: relative;
+	width: 550px;
+	height: auto;
+	margin-top: 80px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#container header {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	text-transform: uppercase;
+	font-family: "quatro-slab-1","quatro-slab-2";
+	color: #3071a0;
+	text-shadow: -4px 4px 0px #FFF;
+}
+
+section#container header h2 {
+	font-size: 3em;
+}
+
+section#container header h1 {
+	font-size: 8em;
+}
+
+section#container section#form_container {
+	margin: 20px auto 20px auto;
+	background: #FFF;
+	width: 550px;
+	height: auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+section#container section#form_container form {
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#container form input[type=email] {
+	height: 35px;
+	width: 350px;
+	background:  #efefef;
+	border: none;
+	font-size: 2em;
+	padding: 10px;
+	color: #999;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+section#container section#form_container form button {
+	display: inline;
+	position: relative;
+	top: 3px;
+  background: #a5b8da;
+  background: -moz-linear-gradient(0% 100% 90deg, #7089b3, #a5b8da);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a5b8da), to(#7089b3));
+  border-top: 1px solid #758fba;
+  border-right: 1px solid #6c84ab;
+  border-bottom: 1px solid #5c6f91;
+  border-left: 1px solid #6c84ab;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: inset 0 1px 0 0 #aec3e5;
+  -webkit-box-shadow: inset 0 1px 0 0 #aec3e5;
+  box-shadow: inset 0 1px 0 0 #aec3e5;
+  color: #fff;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  text-shadow: 0 -1px 1px #64799e;
+  width: 155px;
+	height: 54px;
+}
+
+section#container section#form_container form button:hover {
+  background: #9badcc;
+  background: -moz-linear-gradient(0% 100% 90deg, #687fa6, #9badcc);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#9badcc), to(#687fa6));
+  border-top: 1px solid #6d86ad;
+  border-right: 1px solid #647a9e;
+  border-bottom: 1px solid #546685;
+  border-left: 1px solid #647a9e;
+  -moz-box-shadow: inset 0 1px 0 0 #a5b9d9;
+  -webkit-box-shadow: inset 0 1px 0 0 #a5b9d9;
+  box-shadow: inset 0 1px 0 0 #a5b9d9;
+  cursor: pointer;
+}
+
+section#container section#form_container form button:active {
+  border: 1px solid #546685;
+  -moz-box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eee;
+  -webkit-box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eee;
+  box-shadow: inset 0 0 8px 2px #7e8da6, 0 1px 0 0 #eee;
+}
+
+section#container section#description {
+	width: 550px;
+	margin: 20px auto 20px auto;
+}
+
+section#container section#description p {
+	margin-bottom: 15px;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+section#container section#footer {
+	position: relative;
+	text-align: center;
+	bottom: 0px;
+}
+
+/* Messages */
+section#messages section {
+	position: fixed;
+	width: 100%;
+	height: 75px;
+	top: 0px;
+	background: rgba(0, 0 ,0 , .7);
+	display: none;
+	z-index: 200;
+	color: #FFF;
+	text-align: center;
+	font-family: "Helvetica", sans-serif;
+	font-size: 1.3em;
+	line-height: 75px;
+}
+small {
+	font-size: 10px;
+}
