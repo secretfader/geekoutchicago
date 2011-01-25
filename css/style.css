@@ -11,7 +11,7 @@
 
 @-webkit-keyframes cloud_one {
 	0% {
-		left: -10%;
+		left: -200%;
 	}
 	20%{
 		left: 30%;
@@ -49,7 +49,7 @@
 
 @-webkit-keyframes cloud_three {
 	0% {
-		left: -10%;
+		left: -150%;
 	}
 	20% {
 		left: 5%;
@@ -70,7 +70,7 @@
 
 @-webkit-keyframes cloud_four {
 	0% {
-		left: -10%;
+		left: -100%;
 		top: 50px;
 	}
 	20% {
@@ -91,20 +91,20 @@
 }
 
 #cloud1 {
-	-webkit-animation: cloud_one 20s infinite;
+	-webkit-animation: cloud_one 30s infinite;
 	left: 100px;
 }
 
 #cloud2 {
-	-webkit-animation: cloud_two 20s infinite;
+	-webkit-animation: cloud_two 35s infinite;
 }
 
 #cloud3 {
-	-webkit-animation: cloud_three 25s infinite;
+	-webkit-animation: cloud_three 40s infinite;
 }
 
 #cloud4 {
-	-webkit-animation: cloud_four 17s infinite;
+	-webkit-animation: cloud_four 26s infinite;
 }
 
 section.cloud {
