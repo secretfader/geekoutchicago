@@ -292,7 +292,8 @@ section#container section#description p {
 section#container section#footer {
 	position: relative;
 	text-align: center;
-	bottom: 0px;
+	margin-bottom: 25px;
+	line-height: 18px;
 }
 
 /* Messages */
