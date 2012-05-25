@@ -303,7 +303,6 @@ section#messages section {
 	height: 75px;
 	top: 0px;
 	background: rgba(0, 0 ,0 , .7);
-	display: none;
 	z-index: 200;
 	color: #FFF;
 	text-align: center;
